@@ -1,16 +1,16 @@
-defmodule ArkEcosystem.Client do
+defmodule PhantomChain.Client do
   @moduledoc """
-  Documentation for ArkEcosystem.Client
+  Documentation for PhantomChain.Client
   """
 
   @type response :: {:ok, any} | {:error, any}
 
   @doc """
-  Shortcut to `ArkEcosystem.Client.Connection.new/1`
+  Shortcut to `PhantomChain.Client.Connection.new/1`
   """
   @spec new(Keyword.t()) :: Tesla.Client.t()
   def new(opts) do
-    ArkEcosystem.Client.Connection.new(opts)
+    PhantomChain.Client.Connection.new(opts)
   end
 
   @doc """

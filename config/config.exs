@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :ark_elixir, key: :value
+#     config :phantom_elixir, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:ark_elixir, :key)
+#     Application.get_env(:phantom_elixir, :key)
 #
 # You can also configure a 3rd-party app:
 #

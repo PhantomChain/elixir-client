@@ -1,17 +1,17 @@
-defmodule ArkEcosystem.Client.MixProject do
+defmodule PhantomChain.Client.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :arkecosystem_client,
+      app: :phantomchain_client,
       version: "1.0.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
       deps: deps(),
-      name: "ArkEcosystem Elixir Client",
-      source_url: "https://github.com/ArkEcosystem/elixir-client",
+      name: "PhantomChain Elixir Client",
+      source_url: "https://github.com/PhantomChain/elixir-client",
       test_coverage: [tool: ExCoveralls],
     ]
   end
@@ -37,15 +37,15 @@ defmodule ArkEcosystem.Client.MixProject do
   end
 
   defp description() do
-    "A simple Elixir API client for the Ark Blockchain."
+    "A simple Elixir API client for the PHANTOM Blockchain."
   end
 
   defp package() do
     [
-      maintainers: ["Brian Faust", "ArkEcosystem"],
+      maintainers: ["Brian Faust", "PhantomChain"],
       files: ["config", "lib", "mix.exs", "README*", "LICENSE*"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ArkEcosystem/elixir-client"}
+      links: %{"GitHub" => "https://github.com/PhantomChain/elixir-client"}
     ]
   end
 end

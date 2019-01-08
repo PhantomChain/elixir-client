@@ -1,4 +1,4 @@
-defmodule ArkEcosystem.Client.Logger do
+defmodule PhantomChain.Client.Logger do
   @moduledoc """
   This is a wrapper for the standard Logger module. It contains convenience
   methods for logging exceptions and objects in addition to strings.

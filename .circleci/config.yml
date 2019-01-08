@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/elixir:1.6
-    working_directory: ~/arkecosystem/client
+    working_directory: ~/phantomchain/client
     steps:
       - checkout
       - run: mix local.hex --force
@@ -41,4 +41,4 @@ jobs:
           when: on_success
           command: bash <(curl -s https://codecov.io/bash)
       - store_test_results:
-          path: _build/test/lib/arkecosystem_client
+          path: _build/test/lib/phantomchain_client

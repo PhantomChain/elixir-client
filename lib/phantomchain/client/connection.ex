@@ -1,6 +1,6 @@
-defmodule ArkEcosystem.Client.Connection do
+defmodule PhantomChain.Client.Connection do
   @moduledoc """
-  Documentation for ArkEcosystem.Client.Connection
+  Documentation for PhantomChain.Client.Connection
 
   This module generates a Tesla.Client for use in future requests. Feel free
   to make your own Tesla Client struct and pass that around.
@@ -10,7 +10,7 @@ defmodule ArkEcosystem.Client.Connection do
 
   ## Examples
 
-      iex> ArkEcosystem.Client.Connection.new(client)
+      iex> PhantomChain.Client.Connection.new(client)
       %Tesla.Client{
         fun: nil,
         post: [],
@@ -42,7 +42,7 @@ defmodule ArkEcosystem.Client.Connection do
     ]
 
     log_level =
-      case Application.get_env(:ark_elixir, :env, :prod) do
+      case Application.get_env(:phantom_elixir, :env, :prod) do
         :dev -> :debug
         _ -> :default
       end
@@ -51,7 +51,7 @@ defmodule ArkEcosystem.Client.Connection do
       {Tesla.Middleware.BaseUrl, host},
       {Tesla.Middleware.Headers, headers},
       {Tesla.Middleware.JSON, []},
-      {ArkEcosystem.Client.Middleware.Logger, [log_level: log_level]},
+      {PhantomChain.Client.Middleware.Logger, [log_level: log_level]},
     ]
 
     Tesla.client(pre)
